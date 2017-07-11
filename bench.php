@@ -6,8 +6,11 @@ switch ($argv[1]){
 	case "unchecked":
 		require_once("./test_unchecked.php");
 		break;
+	case "hinted":
+		require_once("./test_hinted.php");
+		break;
 	default:
-		die("checked or unchecked parameter required\n");
+		die("checked/unchecked/hinted parameter required\n");
 }
 
 $dates = [
